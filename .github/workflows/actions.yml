@@ -18,7 +18,10 @@ jobs:
       
       - name: Depend install and serve
         env: 
-          TOKEN: ${{ secret.TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
+          MAIL: ${{ secrets.EMAIL }}
+          AUTHORIZATION_CODE: ${{ secrets.AUTHORIZATION_CODE }}
+          DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: |
           npm install
