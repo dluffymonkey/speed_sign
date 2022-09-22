@@ -1,7 +1,5 @@
 const Speed = require('./speed/index.js')
-const axios = require('axios');
 const pushMessage = require('./utils/pushMessage.js')
-const { COOKIE } = require('./ENV')
 
 const growth = {
   userName: '', // 用户名
